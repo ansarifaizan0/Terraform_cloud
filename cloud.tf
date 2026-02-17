@@ -13,11 +13,4 @@ resource "local_file" "webservers" {
   content  = "This is ${each.value} running in ${var.environment}"
 }
 
-variable "environment" {
-}
-variable "server_name"
-{
-}
-varibale "webserver" {
-  type = list(string)
-}
+
