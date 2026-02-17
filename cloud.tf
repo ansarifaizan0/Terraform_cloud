@@ -1,12 +1,4 @@
-terraform {
-  cloud {
-    organization = "your-org-name"
 
-    workspaces {
-      name = "local-resource-demo"
-    }
-  }
-}
 
 # Create a local file
 resource "local_file" "demo" {
