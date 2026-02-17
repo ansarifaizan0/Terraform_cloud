@@ -1,6 +1,6 @@
 variable "webserver" {
 type = list(string)
-default = ["webserver-1","webserver2","webserver3" ]
+default = ["webserver1","webserver2","webserver3" ]
 }
 
 variable "instance_type" {
