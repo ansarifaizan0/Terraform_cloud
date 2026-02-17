@@ -12,3 +12,12 @@ resource "local_file" "webservers" {
   filename = "${path.module}/${each.value}.txt"
   content  = "This is ${each.value} running in ${var.environment}"
 }
+
+variable "environment" {
+}
+variable "server_name"
+{
+}
+varibale "webserver" {
+  type = list(string)
+}
