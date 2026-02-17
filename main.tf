@@ -1,9 +1,9 @@
-resource "local_file" "faizan" {
-  for_each = toset(var.webserver)  # Convert list to set
+#resource "local_file" "faizan" {
+ # for_each = toset(var.webserver)  # Convert list to set
   
-  filename = "${path.module}/${each.value}.txt"  # Correct syntax
-  content  = "This is ${each.value}"              # Required attribute
-}
+  #filename = "${path.module}/${each.value}.txt"  # Correct syntax
+  #content  = "This is ${each.value}"              # Required attribute
+#}
 
 #variable "webserver" {
  # type    = list(string)  # Correct type
